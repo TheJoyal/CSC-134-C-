@@ -14,6 +14,6 @@ Relevant assignments for today (2/15):
 3. M3LAB3 versioning a project in progress)
 
 #Markdown Examples
- #Heading
+# Heading
 ## Subheading
 **bold text**
