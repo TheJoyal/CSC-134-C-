@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1677688435 source:c:\users\joyaln2055\documents\github\csc-134-cp\m4t2_joyal\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
