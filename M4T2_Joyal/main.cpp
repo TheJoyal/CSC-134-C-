@@ -51,7 +51,43 @@ void option_two()
 void option_three()
 {
     // TODO what does this do
-    cout << "Test 3" << endl;
+    cout << "" << endl;
+    // sum and average of dice
+    // roll 3d6, six times
+    // find the sum and average
+    // TODO: reroll if not high enough - average < 9
+    int total = 0;
+    int i;
+    int d6_1, d6_2, d6_3;
+    int roll;
+    int seed = time(0);
+    for(int i=1; i<=6; i++)
+
+    {
+        srand(seed);
+        // roll die
+    d6_1 = (rand() % 6) + 1;
+    d6_2 = (rand() % 6) + 1;
+    d6_3 = (rand() % 6) + 1;
+    roll = d6_1 + d6_2 + d6_3;
+    cout << "Roll #" << i <<": ";
+    cout << d6_1 << " + " << d6_2 << " + " << d6_3;
+    cout << " = " << roll << endl;
+    }
+    total += roll;
+    cout << "Total of all stats: " << total << endl;
+    int average = total / 6;
+    cout << "average roll = " << average << endl;
+    if(average <= 9)
+    {
+        cout << "Low stats, you can re-roll." << endl;
+    }
+    else
+    {
+        cout << "A playable character! Good luck!" << endl;
+    }
+
+
 }
 
 // option four = quit
